@@ -1,0 +1,183 @@
+$background: #252525;
+$lavendar: #C3A7FF;
+$color:#EDEDED;
+$lh: 1.4375em;
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+    font-family: 'neue-haas-grotesk-test', 'Pretendard', 'Helvetica Neue', 'Noto Sans KR';
+    word-break: keep-all;
+    position: relative;
+    box-sizing: border-box; /*선이 박스 안에 생기도록 도와줌*/
+}
+
+html{
+    font-size: 16px;
+    font-family: 'neue-haas-grotesk-test', 'Pretendard', 'Helvetica Neue', 'Noto Sans KR';
+}
+
+body{
+    background: #ffff;
+    background-image: url(../img/backnew.png);
+    color: #BCCBD3;
+    line-height: $lh;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.no-background {
+    background-image: none; /* 배경 이미지 없음 */
+}
+
+h2{
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+section{
+    display: flex;
+    
+    margin-top: 15vh;
+    margin-left: 70px;
+}
+
+
+.sectionb{
+    display: flex;
+}
+
+.menu{
+    width: 12%;
+    height: 200px;
+    padding-left: 5px;
+    /*background-color: #252525;*/
+}
+
+.text{
+    width: 310px;
+    padding-left: 5px;
+    margin-right: 340px;
+}
+
+.Contact{
+
+    
+
+    /*padding-left: 5px;
+    margin-left: 340px;
+    
+    /*margin-right: 5vw;*/
+    
+}
+
+a {
+    color: inherit; /* 부모 요소에서 상속한 색상 사용 */
+    text-decoration:dashed;
+}
+
+ul li {
+    margin-top: 5px;
+  }
+
+li a:hover {
+    color: #fff; /* 마우스 호버 시 글자색 변경 */
+}
+
+
+
+
+/* 모바일용 스타일 */
+@media (max-width: 480px) {
+
+    body{
+        background-image: url(../img/iiii.png);
+        background-size: cover;
+        overflow: hidden;
+        position: fixed;
+    }
+    
+    section{
+        margin-top: 15vh;
+        margin-left: 6vw;
+        display: inline-block;
+        /*flex-direction: column;*/
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        /*ul li {
+            display: inline-block;
+            margin-right: 15px; 
+        }*/
+        
+    }
+
+    .text{
+        /*margin-left: 90px;*/
+        padding-top: 4px;
+        width: 70vw;
+        
+        
+    }
+
+    
+
+    .sectionb{
+        display: flex;
+        margin-left: 20vw;
+        margin-top: 0;
+        flex-direction: column;
+    }
+
+    .Contact{
+        display: none;
+        margin-top: 55vh;
+        width: 100%;
+        padding-left: 5px;
+        position: fixed;
+    }
+
+    p{
+        font-size: 14px;
+        line-height: 19px;
+      }
+
+    h2{
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+
+}
+
+/* 태블릿용 스타일 */
+@media (min-width: 601px) and (max-width: 1024px) {
+    nav ul li {
+        display: inline;
+        margin: 0 0.5rem;
+    }
+}
+
+/* 데스크탑용 스타일 */
+@media (min-width: 1025px) {
+    nav ul li {
+        display: inline;
+        margin: 0 1rem;
+    }
+}

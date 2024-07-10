@@ -1,0 +1,225 @@
+
+
+
+$background: #252525;
+$lavendar: #C3A7FF;
+$color:#EDEDED;
+$lh: 1.4375em;
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+    font-family: 'neue-haas-grotesk-test', 'Pretendard', 'Helvetica Neue', 'Noto Sans KR';
+    word-break: keep-all;
+    position: relative;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    font-family: 'neue-haas-grotesk-test', 'Pretendard', 'Helvetica Neue', 'Noto Sans KR';
+}
+
+body{
+    background: #ffff;
+    background-image: url(../img/backnew.png);
+    color: #BCCBD3;
+    line-height: $lh;
+    
+}
+
+
+
+
+
+
+
+
+
+
+.Image{
+    width: 500px;
+    margin-left: 10vw;
+
+    
+}
+
+.imagecon{
+    margin-top: 5vh;
+    width: 350px;
+    margin-bottom: 20vh;
+}
+
+.no-background {
+    background-image: none; /* 배경 이미지 없음 */
+}
+
+h2{
+    font-size: 17px;
+    font-weight: 400;
+}
+
+h4{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+section{
+    display: flex;
+    
+    margin-top: 15vh;
+    margin-left: 70px;
+}
+
+
+.sectionb{
+    display: flex;
+}
+
+.menu{
+    
+
+    width: 200px;
+    height: 200px;
+    padding-left: 5px;
+}
+
+.text{
+    width: 350px;
+    padding-left: 5px;
+    ;
+    
+}
+
+.Contact{
+    padding-left: 5px;
+    
+    /*margin-right: 5vw;*/
+    
+}
+
+a {
+    color: inherit; /* 부모 요소에서 상속한 색상 사용 */
+    text-decoration:dashed;
+}
+
+ul li {
+    margin-top: 5px;
+  }
+
+li a:hover {
+    color: #fff; /* 마우스 호버 시 글자색 변경 */
+}
+
+.back{
+    display: none;*
+    z-index: -1;
+}
+
+h9{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #C3A7FF;
+    text-decoration: underline;
+}
+
+
+
+/* 모바일용 스타일 */
+@media (max-width: 480px) {
+
+    body{
+        /*background-image: url(../img/iiii.png);*/
+        background-image: none;
+        background-size: cover;
+    }
+    
+    .back{
+        width: 100vw;
+        display: flex;
+        position: fixed;
+    }
+    
+    section{
+        margin-top: 15vh;
+        margin-left: 6vw;
+        display: inline-block;
+        /*flex-direction: column;*/
+    }
+
+    .menu{
+        position: fixed;
+        width: 15vw;
+        z-index: 15;
+        /*ul li {
+            display: inline-block;
+            margin-right: 15px; 
+        }*/
+    }
+
+    .text{
+        /*position: fixed;*/
+        /*margin-left: 90px;*/
+        width: 70%;
+        margin-left: 20vw;
+    }
+
+    .Image{
+        margin-top: 4vh;
+        margin-left: 20vw;
+        margin-bottom: 20vh;
+        width: 50vw;
+        overflow-y: scroll;
+        /*position: fixed;*/
+    }
+
+    .imagecon{
+        margin-top: vh;
+        margin-bottom: 0vh;
+        width: 100%;
+        /*overflow-x: scroll;
+        display: flex;
+        padding-right: 10px;*/
+    }
+
+    .sectionb{
+        display: flex;
+        margin-top: 0;
+        flex-direction: column;
+        z-index: 10;
+    }
+
+    p{
+        font-size: 14px;
+        line-height: 19px;
+      }
+
+    h2{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+    }
+
+
+
+}
+
+/* 태블릿용 스타일 */
+@media (min-width: 601px) and (max-width: 1024px) {
+    nav ul li {
+        display: inline;
+        margin: 0 0.5rem;
+    }
+}
+
+/* 데스크탑용 스타일 */
+@media (min-width: 1025px) {
+    nav ul li {
+        display: inline;
+        margin: 0 1rem;
+    }
+}
